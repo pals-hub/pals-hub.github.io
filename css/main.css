@@ -1,133 +1,191 @@
-/*=== variables; must start with two dashes (--) ===*/
-/*--- color names ---*/
-:root {
-    --pal-forest-green: #044123;
-    --pal-green: #03B585;
-    --pal-pale-green: #CCDCC8;
-    --pal-power-green: #32EB96;
-    --pal-grey: #999;
-    --pal-light-grey: #d5d5d5;    
-}
-
-/*=== GLOBAL SETTINGS ===*/
-    /* the homepage has this margin and width */
-        .site-body {
-            margin: 40px auto;
-            width: 50%;
+/*=== VARIABLES; MUST START WITH TWO DASHES (--) ===*/
+    /*--- color names ---*/
+        :root {
+            --pal-forest-green: #044123;
+            --pal-green: #03B585;
+            --pal-pale-green: #CCDCC8;
+            --pal-power-green: #32EB96;
+            --pal-grey: #999;
+            --pal-light-grey: #d5d5d5;
+            --pal-plum: #962E65;    
         }
 
-    /* any link on homepage upon hovering would be underlined */
-        .site-body a:hover {
-            text-decoration: underline;
-        }
-
-    /* paragraphs font settings */
-        .site-body p {
-            font-family: "Source Sans Pro", sans-serif;
-            font-size: 1.5em;
-            line-height: 1.4em;
-            color: var(--pal-forest-green);
-            text-align: justify;
+        body {
+            margin-left: 25%;
+            margin-right: 25%;
+            background-color: var(--pal-light-grey);            
         }
 
 /*=== TITLE SETTINGS ===*/
-    /* title section defined as <div class="site-title"text here</div> */
+    /*--- title section defined as <div class="site-title"text here</div> ---*/
         .site-title h1 {
-            font-size: 5em;
+            font-size: 4em;
             font-family: "Noto-Serif", serif;
-            color: var(--pal-forest-green);
-            text-align: center;
+            color: var(--pal-light-grey);
+            text-align: left;
+            font-variant: small-caps;
+            border-top-right-radius: 25px;
+            background-color: var(--pal-forest-green);            
+            letter-spacing: 2px;
+            padding-left: 1%;
+            padding-bottom: 0px;
+            margin-block-end: 0.5em;
         }
-    
-    /* site title hyperlink color is not the same as other hyperlinks */
+
+    /*--- site title hyperlink ---*/
         .site-title a {
             text-decoration: none;
+            color: var(--pal-light-grey);
+        }
+    
+    /*--- border after title ---*/
+        .site-title {
+            border-bottom: 1px solid var(--pal-forest-green);            
+        }
+
+/*=== BODY SETTINGS ===*/
+    /*--- body h1 ---*/
+        .site-body h1 {
+            font-family: "Noto Serif", serif;
+            font-variant: small-caps;
+            font-size: 2em;
+            line-height: 0.0em;
+            color: var(--pal-forest-green);
+            text-align: left;
+            padding-left: 1%;
+            padding-right: 1%;        
+            padding-top: 8px;
+            padding-bottom: 0px;
+        }
+        
+        .site-body h1 a, .site-body h3 a, .site-body h4 a, .site-body h5 a {
+            text-decoration: none;
+            color: var(--pal-forest-green);                  
+        }
+
+        .site-body h2 a {
+            text-decoration: none;
+            color: var(--pal-light-grey);         
+        }
+        
+    /*--- body h2 ---*/
+        .site-body h2 {
+            font-family: "Source Sans Pro", sans-serif;
+            font-variant: small-caps;
+            font-size: 1.5em;
+            line-height: 1.2em;
+            color: var(--pal-light-grey);
+            text-align: left;
+            padding-left: 1%;
+            padding-right: 1%;        
+            padding-top: 0px;
+            padding-bottom: 0px;            
+            border-top-right-radius: 25px;
+            background-color: var(--pal-forest-green); 
+        }
+
+        /*--- body h3 ---*/
+        .site-body h3 {
+            font-family: "Source Sans Pro", sans-serif;            
+            font-size: 1.2em;
+            font-variant: small-caps;
+            line-height: 1.2em;
+            color: var(--pal-forest-green);
+            text-align: left;
+            padding-left: 1%;
+            padding-right: 1%;        
+            padding-top: 0px;
+            padding-bottom: 0px;            
+        }
+
+        .site-body h4 {
+            font-family: "Source Sans Pro", sans-serif;            
+            font-size: 1.2em;            
+            line-height: 1.2em;
+            color: var(--pal-forest-green);
+            text-align: left;
+            padding-left: 1%;
+            padding-right: 1%;        
+            padding-top: 0px;
+            padding-bottom: 0px;            
+        }
+
+        .site-body h5 {
+            font-family: "Source Sans Pro", sans-serif;            
+            font-size: 1.0em;            
+            line-height: 1.2em;
+            color: var(--pal-forest-green);
+            text-align: left;
+            padding-left: 1%;
+            padding-right: 1%;        
+            padding-top: 0px;
+            padding-bottom: 0px;            
+        }
+
+    /*--- paragraphs font settings ---*/
+        .site-body p {
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 1.0em;
+            line-height: 1.2em;
+            color: var(--pal-forest-green);
+            text-align: justify;
+            padding-left: 1%;
+            padding-right: 1%;            
+            padding-top: 0px;
+            padding-bottom: 0px;         
+        }
+
+    /*--- body hyperlink ---*/
+        .site-body p a {
+            text-decoration:underline;
             color: var(--pal-forest-green);
         }
 
-        .site-title {
-            border-bottom: 1px solid var(--pal-light-grey);;
-            font-size: .8em; 
+        #blog-list {
+            border-bottom: 1px solid var(--pal-forest-green);
         }
 
+        #post-body {
+            border-bottom: 1px solid var(--pal-forest-green);
+        }
 
-/* === TOP SITEWIDE NAV BAR === */
-    /* links in nav bar */
-        .site-nav-bar a {
+        .post-title h1 a, .post-title h2 a {
+            color: var(--pal-forest-green);            
+        }
+        
+        .post-title h2 {
+            background: none;            
+        }
+
+        .blog-date h2 a {
+            color: var(--pal-forest-green);
+        }
+
+        .blog-date h2 {
+            background: none;
+        }
+
+/*=== FOOTER ===*/
+    /*--- links in nav bar ---*/
+        .site-footer a {
             text-decoration: none;
-            color: var(--pal-grey);
+            color: var(--pal-forest-green);
         }
-
-    /* unordered lists in nav bar */
-        .site-nav-bar nav ul {
-            font-family: "Space Mono", sans-serif;
+    
+    /*--- footer unordered list ---*/
+        .site-footer ul {
+            font-family: "Space Mono", monospace;
             padding: 0px;
             list-style: none;
             font-weight: normal;
             text-align: right;
+            font-size: 1em;
+            font-variant: small-caps;
         }
 
-    /* list items in the unordered list should be inline */
-        .site-nav-bar nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-/*=== FOOTER ===*/
-    /* links in nav bar */
-        .site-footer a {
-            text-decoration: none;
-            color: var(--pal-grey);
-        }
-    
-    /* footer unordered list */
-        .site-footer ul {
-            font-family: "Space Mono", sans-serif;
-            padding: 0px;
-            list-style: none;
-            font-weight: normal;
-            text-align: center;
-        }
-
-    /* list items in the unordered list should be inline */
+    /*--- list items in the unordered list should be inline ---*/
         .site-footer li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-    /* footer top border */
-        .site-footer {
-            border-top: 1px solid var(--pal-light-grey);;
-            font-size: .8em;
+            display: inline;            
         }
 
 
-/*
-
-h1 {
-    font-size: 3em;
-    font-family: "Source Sans Pro", sans-serif;
-    color: #044123;
-}
-
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #044123;
-}
-
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
-}
-
-*/
