@@ -1,0 +1,7 @@
+
+{% for post in site.posts %}
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <div class="blog-date"><h2><a href="{{ post.url }}">{{ post.date | date_to_string }}</a></h2></div>
+    <div id="blog-list"><p>{{ post.excerpt }}</p></div>
+{% endfor %}
+
