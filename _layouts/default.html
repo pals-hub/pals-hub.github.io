@@ -6,10 +6,12 @@
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>	
-
-	<div class="container">
-		{% include sitetitle.html %}	
-		{{ content }}
-		{% include sitefooter.html %}
-	</div><!-- /.container -->
+	<body>
+		<div class="container">
+			{% include sitetitle.html %}	
+			{{ content }}
+			{% include sitefooter.html %}
+		</div><!-- /.container -->
+	</body>
+	<!-- Parse the Latex divs with Katex-->
 </html>
