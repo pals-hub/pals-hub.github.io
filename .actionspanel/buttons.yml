@@ -1,0 +1,5 @@
+buttons
+  - title: Build Jekyll
+    action: "build-jekyll"
+    description: Builds the blog and serves
+    confirm: true
