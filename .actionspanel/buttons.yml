@@ -1,5 +1,7 @@
-buttons
-  - title: Build Jekyll
-    action: "build-jekyll"
-    description: Builds the blog and serves
+--- 
+buttons: 
+  - 
+    action: build-jekyll
     confirm: true
+    description: "Builds the blog and serves"
+    title: "Build Jekyll"
