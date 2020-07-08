@@ -1,7 +1,5 @@
---- 
 buttons: 
-  - 
-    action: build-jekyll
+  - action: Build Jekyll
     confirm: true
     description: "Builds the blog and serves"
     title: "Build Jekyll"
